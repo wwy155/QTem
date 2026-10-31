@@ -3,7 +3,7 @@
 Code for the paper **QTem: Bounded-Error Compressed Data Movement for Temporal Graph Neural Network Training**.
 Appendix of the paper: [appendix.pdf](appendix.pdf).
 
-QTem is built on [ETC](https://github.com/eddiegaoo/ETC) and [TGL](https://github.com/amazon-research/tgl)
+QTem is built on [ETC](https://github.com/eddiegaoo/ETC) and [TGL](https://github.com/amazon-science/tgl)
 (TGL's license: [LICENSE-TGL](LICENSE-TGL), [NOTICE-TGL](NOTICE-TGL)).
 
 ## Setup
