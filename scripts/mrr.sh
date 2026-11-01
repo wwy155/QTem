@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Evaluation of the checkpoints of accuracy.sh and real.sh against 49 random negatives per positive (MRR, Table 8).
+# Evaluation of the checkpoints of accuracy.sh and real.sh against 49 random negatives per positive (MRR).
 # Every checkpoint is evaluated with its seed and with the representation it was trained with.
 # Run from the repository root and select the GPU with CUDA_VISIBLE_DEVICES; DRY=1 prints the commands only.
 set -u

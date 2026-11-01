@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Accuracy runs on Wikipedia and Reddit with their real 172-dimensional edge features (Table 7; Figure 4): the
+# Accuracy runs on Wikipedia and Reddit with their real 172-dimensional edge features: the
 # full-precision pipeline and QTem with 8-bit and with 4-bit codes (one scale per row), with the same configuration
 # file and seed. DATA/WIKI and DATA/REDDIT hold TGL's files. mrr.sh evaluates the checkpoints in models/ again.
 # Run from the repository root and select the GPU with CUDA_VISIBLE_DEVICES; DRY=1 prints the commands only.

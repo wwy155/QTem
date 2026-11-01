@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Checks on Stack-Overflow-APAN (Section 6.2; Appendix D): a second full-precision run of seed 0; the checkpoints of
+# Checks on Stack-Overflow-APAN: a second full-precision run of seed 0; the checkpoints of
 # seeds 0 and 1 of accuracy.sh evaluated with the inputs of either pipeline (test AP) and with the inputs of the other
 # pipeline against 49 negatives per positive (MRR); and the second run evaluated against 49 negatives.
 # Needs the checkpoints of accuracy.sh. Run from the repository root and select the GPU with CUDA_VISIBLE_DEVICES;

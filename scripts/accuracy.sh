@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Accuracy runs on the four benchmark graphs (Tables 2, 5, and 6; Figure 4). For every configuration and seed, QTem
+# Accuracy runs on the four benchmark graphs. For every configuration and seed, QTem
 # and the full-precision pipeline (ETC) train with the same configuration file and seed, and hence with the same
 # initialization, features, sampler, and negatives. Table 2 lists the mean test AP of the three QTem runs of a
 # configuration. mrr.sh and so_apan.sh evaluate the checkpoints in models/ again.

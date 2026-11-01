@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Data-path variants of Section 6.5 (Table 13; Figures 1 and 6). In each of four rounds, every variant of a
+# Data-path variants. In each of four rounds, every variant of a
 # configuration trains one epoch (seed 0, without validation) on the same GPU, back to back, in the listed order in odd
 # rounds and in reverse order in even rounds. SIMPLE, and on LastFM also TGL, ran in the same rounds with their own
-# code (Table 13).
+# code.
 # Run from the repository root and select the GPU with CUDA_VISIBLE_DEVICES; DRY=1 prints the commands only.
 set -u
 L=logs/datapath
