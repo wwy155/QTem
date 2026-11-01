@@ -26,7 +26,7 @@ files in `DATA/WIKI` and `DATA/REDDIT`.
     # QTem, lossless bit planes for GDELT's binary features
     CUDA_VISIBLE_DEVICES=0 python train.py --data GDELT --config config/main/GDELT_TGN.yml --qpack 1 --qgpu 1 --seed 0
 
-    # ETC (full precision)
+    # full precision (FP32)
     CUDA_VISIBLE_DEVICES=0 python train.py --data LASTFM --config config/main/LastFM_TGN.yml --qbits 0 --seed 0
 
 Other options: `python train.py --help`.
@@ -41,5 +41,5 @@ The scripts in `scripts/` contain the commands of the following runs; `DRY=1 bas
 | `real.sh` | QTem (8-bit, 4-bit) and full precision on Wikipedia and Reddit, three seeds | Table 7 |
 | `mrr.sh` | the checkpoints of both scripts above against 49 negatives per positive | Table 8 |
 | `so_apan.sh` | repeated run and input swaps on Stack-Overflow-APAN | Section 6.2, Appendix D |
-| `timing.sh` | QTem, ETC, and QTem back to back | epoch times of QTem in Table 2 |
-| `datapath.sh` | data-path variants in four alternating rounds | Section 6.5, Table 13 |
+| `timing.sh` | QTem, full precision (FP32), and QTem back to back | epoch times of QTem in Table 2 |
+| `datapath.sh` | data-path variants in four alternating rounds | Section 6.5, Table 12 |
