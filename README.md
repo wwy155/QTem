@@ -14,7 +14,8 @@ Python 3.10, PyTorch 2.1, DGL 2.4, NumPy, pandas, PyYAML, scikit-learn, pybind11
     mkdir -p models
 
 Datasets as in ETC: `bash down.sh` downloads LastFM and GDELT; Wiki-Talk and Stack-Overflow come from SNAP and are
-converted with `python preprocess.py --data WIKITALK --txt <file>` (or `STACKOVERFLOW`).
+converted with `python preprocess.py --data WIKITALK --txt <file>` (or `STACKOVERFLOW`). Wikipedia and Reddit are TGL's
+files in `DATA/WIKI` and `DATA/REDDIT`.
 
 ## Run
 
@@ -28,5 +29,17 @@ converted with `python preprocess.py --data WIKITALK --txt <file>` (or `STACKOVE
     # ETC (full precision)
     CUDA_VISIBLE_DEVICES=0 python train.py --data LASTFM --config config/main/LastFM_TGN.yml --qbits 0 --seed 0
 
-`config/main`: accuracy runs; `config/real`: Wikipedia and Reddit; `config/timing`: ETC's default configurations,
-used for the epoch times (on Wiki-Talk with `QTEM_WIKITALK_EDGE_FEATS=1`). Other options: `python train.py --help`.
+Other options: `python train.py --help`.
+
+## Experiments
+
+The scripts in `scripts/` contain the commands of the following runs; `DRY=1 bash scripts/<script>` prints them.
+
+| Script | Runs | Paper |
+|---|---|---|
+| `accuracy.sh` | QTem and full precision on the four benchmark graphs, three seeds | Tables 2, 5, 6 |
+| `real.sh` | QTem (8-bit, 4-bit) and full precision on Wikipedia and Reddit, three seeds | Table 7 |
+| `mrr.sh` | the checkpoints of both scripts above against 49 negatives per positive | Table 8 |
+| `so_apan.sh` | repeated run and input swaps on Stack-Overflow-APAN | Section 6.2, Appendix D |
+| `timing.sh` | QTem, ETC, and QTem back to back | epoch times of QTem in Table 2 |
+| `datapath.sh` | data-path variants in four alternating rounds | Section 6.5, Table 13 |
