@@ -37,9 +37,9 @@ The scripts in `scripts/` contain the commands of the following runs; `DRY=1 bas
 
 | Script | Runs | Paper |
 |---|---|---|
-| `accuracy.sh` | QTem and full precision on the four benchmark graphs, three seeds | Tables 2, 5, 6 |
-| `real.sh` | QTem (8-bit, 4-bit) and full precision on Wikipedia and Reddit, three seeds | Table 7 |
-| `mrr.sh` | the checkpoints of both scripts above against 49 negatives per positive | Table 8 |
-| `so_apan.sh` | repeated run and input swaps on Stack-Overflow-APAN | Section 6.2, Appendix D |
+| `accuracy.sh` | QTem and full precision on the four benchmark graphs, three seeds | Tables 2, 4, 5 |
+| `real.sh` | QTem (8-bit, 4-bit) and full precision on Wikipedia and Reddit, three seeds | Table 6 |
+| `mrr.sh` | the checkpoints of both scripts above against 49 negatives per positive | Table 7 |
+| `so_apan.sh` | repeated run and input swaps on Stack-Overflow-APAN | Section 5.3, Appendix B |
 | `timing.sh` | QTem, full precision (FP32), and QTem back to back | epoch times of QTem in Table 2 |
-| `datapath.sh` | data-path variants in four alternating rounds | Section 6.5, Table 12 |
+| `datapath.sh` | data-path variants in four alternating rounds | Section 5.6, Figures 1 and 6 |
